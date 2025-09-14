@@ -1,253 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RD{Desktop}</title>
-    <link rel="stylesheet" href="desktop.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mode UI - Full Responsive Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <div class="desktop">
-    <!--announcementbar-->
-    <div class="announcementbar">
-        <button class="announcement">
-         Announcement
-        </button> 
-        <p>We are happy to announce that we raise $2 Million in Seed Funding</p>
-    </div>
-    <!--nav-bar-->
-    <div class="nav">
-    <div class="nav-bar">
-        <div class="logo">
-            <h2>
-                Mode UI
-            </h2>
-        </div>
-        <div class="menu">  
-            <select class="search-select">
-                <option>
-                    Card Access
-                </option>
+<body class="font-sans">
+
+  <!-- Announcement Bar -->
+  <div class="flex flex-col sm:flex-row justify-center items-center text-center gap-2 px-4 py-2 text-sm">
+    <button class="bg-[rgb(113,47,113,0.1)] text-[rgb(113,47,113)] rounded px-2 py-1 text-xs">Announcement</button>
+    <p>We are happy to announce that we raised $2 Million in Seed Funding</p>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="px-4 sm:px-8 py-4 border-b relative">
+    <div class="flex justify-between items-center">
+      <h2 class="text-xl font-semibold">Mode UI</h2>
+      <button id="menu-toggle" class="sm:hidden text-xl"><i class="fa-solid fa-bars"></i></button>
+      <div class="hidden sm:flex flex-col sm:flex-row gap-2 sm:gap-6 items-center" id="menu">
+        <select class="border rounded px-2 py-1 text-sm">
+          <option>Card Access</option>
         </select>
-            <p>
-                <a href="#">Banking</a> 
-                <a href="#" >Processing</a>
-                <a href="#">About</a>
-                <a href="#">Carrier</a>
-                <a href="#">Contact</a>
-            </p>
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 text-gray-700 text-sm">
+          <a href="#" class="hover:text-[rgb(113,47,113)]">Banking</a>
+          <a href="#" class="hover:text-[rgb(113,47,113)]">Processing</a>
+          <a href="#" class="hover:text-[rgb(113,47,113)]">About</a>
+          <a href="#" class="hover:text-[rgb(113,47,113)]">Career</a>
+          <a href="#" class="hover:text-[rgb(113,47,113)]">Contact</a>
         </div>
-        <div class="action">
-            <button class="login">
-                <p>Login<i class="fa-solid fa-arrow-right-to-bracket"></i></p>
-            </button>
-        </div>
-    </div>
-    </div>
-    <!--logo-cloud-->
-    <div class="logocloud">
-        <div class="logo">
-            <img src="/Company logo.png">
-        </div>
-        <div class="logo">
-            <img src="/Company logo (1).png">
-        </div>
-        <div class="logo">
-            <img src="/Company logo (2).png">
-        </div>
-        <div class="logo">
-            <img src="/Company logo (3).png">
-        </div>
-        <div class="logo">
-            <img src="/Company logo (4).png">
-        </div>
-        <div class="logo">
-            <img src="/Company logo (5).png">
-        </div>
-        <div class="logo">
-            <img src="/Company logo (6).png">
-        </div>
-        <div class="logo">
-            <img src="/Company logo (7).png">
-        </div>
-    </div>
-    <!--herosection with bg-->
-    <div class="herosection-bg">
-       <div class="container">
-        <img src="/Container.png">
-       </div> 
-    </div>
-    <!--Feature1-->
-    <div class="feature">
-        <div class="content">
-            <div class="row">
-                <div class="subtitle">
-                    <h3 style="font-weight: 500;">Elevating Card Programs with<br>
-                    Cutting-Edge Technology</h3><br>
-                    <p>
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p><br>
-                    <button class="profeatures" style="cursor: pointer;">
-                        Compare all Pro Features <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="column">
-            <div class="globallyaccepted">
-            <button class="globe" style="border: 0px; border-radius: 5px;"><i class="fa-solid fa-globe"style="color: rgb(113, 47, 113);"></i></button><br>
-            <br><h4>Globally Accepted</h4><br>
-            <p>Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Est cum enim.</p>
-            </div>
-            <div class="biometricintegrated">
-            <button class="key"style="border: 0px; border-radius: 5px;"><i class="fa-solid fa-key"style="color: rgb(113, 47, 113);"></i></button><br>
-            <br><h4>Biometric Integrated</h4><br>
-            <p>Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Est cum enim.</p>
-            </div>
-            <div class="fullysecured">
-            <button class="lock"style="border: 0px; border-radius: 5px;"><i class="fa-solid fa-lock" style="color: rgb(113, 47, 113);"></i></button><br>
-            <br><h4>Fully Secured</h4><br>
-            <p>Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Est cum enim.</p>
-            </div>
-        </div>
-    </div>
-<!-- feature2-->
-<div class="feature">
-        <div class="content">
-            <div class="row">
-                <div class="subtitle">
-                    <h3 style="font-weight: 500;">Elevating Card Programs with<br>
-                    Cutting-Edge Technology</h3><br>
-                    <p>
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p><br>
-                    <button class="profeatures" style="cursor: pointer;">
-                        Compare all Pro Features <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="image">
-            <div class="image1">
-                <img src="/Image ( 592_490 ).png" style="max-width: 592px; max-height: 490px; background-color: #814BF4; opacity: 100%; border-radius: 11px;">
-            </div>
-            <img src="/Image ( 592_490 ) (1).png" style="max-width: 592px; max-height: 490px;background-color: #814BF4; opacity: 100%; border-radius: 11px;">
-        </div>
-</div>
-<div class="components">
-    <div class="row1">
-            <div class="c">
-        <h2>2 Million</h2><br>
-        <h4>Customers</h4><br>
-        <p>consectetur adipiscing elit, sed <br>do eiusmod tempor incididunt ut</p>
-    </div>
-    <div class="c">
-        <h2>1K</h2><br>
-        <h4>Downloads</h4><br>
-        <p>consectetur adipiscing elit, sed <br>do eiusmod tempor incididunt ut</p>
-    </div>
-    <div class="c">
-        <h2>$73 Million</h2><br>
-        <h4>Transaction</h4><br>
-        <p>onsectetur adipiscing elit, sed <br>do eiusmod tempor incididunt ut</p>
-    </div>
-    <div class="c">
-        <h2>2.0</h2><br>
-        <h4>Latest Version</h4><br>
-        <p>onsectetur adipiscing elit, sed <br>do eiusmod tempor incididunt ut</p>
-    </div>
-    </div>
-</div>
-<!--Testimonial-->
-<div class="testimonial">
-    <div class="container">
-        <div class="row">
-           <div class="company">
-             <img src="/Company logo (8).png">
-             <h3 style="font-weight: 500; font-size: 25px;"><br>I had the pleasure of experience the next generation<br> of card solutions
-                with this incredible product. It's<br>refreshing to see such innovation in 
-                the financial industry.
-             </h3><br><br>
-             <img src="/Base avatars.png"><br>
-             <h6 style="font-weight: 300;">Nick Babich</h6><br>
-             <h6 style="color: grey;">Lead Designer</h6><br>
-             <span class="fa fa-star checked" style="color: yellow;"></span>
-             <span class="fa fa-star checked" style="color: yellow;"></span>
-             <span class="fa fa-star checked" style="color: yellow;"></span>
-             <span class="fa fa-star checked" style="color: yellow;"></span>
-           </div>
-        </div>
-    </div>
-</div>
-<!--CallToAction-->
-<div class="calltoaction">
-    <div class="cta">
-    <h3 style="font-weight: 500; font-size: 40px;">Unlock Limitless Possibilities with<br>Our New Card Solution </h3>
-    <button class="unlockyourcard" style="border-radius: 8px; border: 0px; cursor: pointer; background-color:purple; color: white; font-size: 18px;">
-        unlock your card <i class="fa-solid fa-credit-card"></i></button>
-    <button class="customsupport"style="border-radius: 8px; border: 0px; cursor: pointer; background-color: grey; color:white; font-size:18px;" >
-        custom support <i class="fa-solid fa-headphones"></i></button>
-    </div>
-</div><hr>
-<!--footer-->
-<div class="footer">
-
-   <div class="modeuilogo">
-    <h2>Mode UI</h2>
-    <P>Mode UI is a comprehensive design system that empowers<br> designers and developers
-    to create cohesive and visually stunning<br> user interfaces across various platfroms and devices
-    </P>
-   </div><hr>
-    <div class="panel2"> 
-            <ul>
-                <p>Company</p>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Features</a></li>
-            </ul>
-             <ul>
-               <p>Product</p>
-            <li><a href="#">Figma design system</a></li>
-            <li><a href="#">los Kit</a></li>
-            <li><a href="#">Android Kit</a></li>
-            <li><a href="#">Wireframe</a></li>
-            </ul>
-             <ul>
-               <p>Resources</p>
-            <li><a href="#">Templates</a></li>
-            <li><a href="#">Landing pages</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">Comp library</a></li>
-             </ul>
-             <ul>
-               <p>Legal</p>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Disclaimer</a></li>
-            <li><a href="#">Affiliate programme</a></li>
-             </ul>
-             <ul>
-               <p>Support</p>
-            <li><a href="#">Help centre</a></li>
-            <li>
-              <a href="#">Raise ticket</a></li>
-              <li><a href="#">Report</a></li>
-              <li><a href="#">Refund</a></li>
-             </ul>
+        <button class="border px-3 py-1 rounded text-gray-700 text-sm flex items-center gap-1 hover:text-[rgb(113,47,113)]">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
       </div>
-        
-      <div class="panel3">
-         
-            <div class="copyright">
-                <i class="fa-solid fa-headset"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-discord"></i><BR><BR>
-                © 2023 Mode UI INC. All Rights Reserved.
-            </div>
-   
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col gap-4 mt-4 sm:hidden">
+      <select class="border rounded px-2 py-1 text-sm w-full">
+        <option>Card Access</option>
+      </select>
+      <div class="flex flex-col gap-2 text-gray-700 text-sm">
+        <a href="#" class="hover:text-[rgb(113,47,113)]">Banking</a>
+        <a href="#" class="hover:text-[rgb(113,47,113)]">Processing</a>
+        <a href="#" class="hover:text-[rgb(113,47,113)]">About</a>
+        <a href="#" class="hover:text-[rgb(113,47,113)]">Career</a>
+        <a href="#" class="hover:text-[rgb(113,47,113)]">Contact</a>
+      </div>
+      <button class="border px-3 py-1 rounded text-gray-700 text-sm flex items-center gap-1 hover:text-[rgb(113,47,113)]">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+    </div>
+  </nav>
 
+  <!-- Logo Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 text-center">
+    <!-- Desktop: Single row -->
+    <div class="hidden lg:grid lg:grid-cols-8 gap-6 justify-items-center">
+      <img src="/Company logo (1).png" class="h-10 object-contain" />
+      <img src="/Company logo (2).png" class="h-10 object-contain" />
+      <img src="/Company logo (3).png" class="h-10 object-contain" />
+      <img src="/Company logo (4).png" class="h-10 object-contain" />
+      <img src="/Company logo (5).png" class="h-10 object-contain" />
+      <img src="/Company logo (6).png" class="h-10 object-contain" />
+      <img src="/Company logo (7).png" class="h-10 object-contain" />
+      <img src="/Company logo (8).png" class="h-10 object-contain" />
+    </div>
+
+    <!-- Tablet: Two rows, 5 + 3 -->
+    <div class="hidden sm:grid lg:hidden gap-6 justify-items-center">
+      <div class="grid grid-cols-5 gap-4">
+        <img src="/Company logo (1).png" class="h-10 object-contain" />
+        <img src="/Company logo (2).png" class="h-10 object-contain" />
+        <img src="/Company logo (3).png" class="h-10 object-contain" />
+        <img src="/Company logo (4).png" class="h-10 object-contain" />
+        <img src="/Company logo (5).png" class="h-10 object-contain" />
+      </div>
+      <div class="grid grid-cols-3 gap-4 mt-4">
+        <img src="/Company logo (6).png" class="h-10 object-contain" />
+        <img src="/Company logo (7).png" class="h-10 object-contain" />
+        <img src="/Company logo (8).png" class="h-10 object-contain" />
+      </div>
+    </div>
+
+    <!-- Mobile: Two rows, 4 + 4 -->
+    <div class="grid sm:hidden gap-6 justify-items-center">
+      <div class="grid grid-cols-4 gap-4">
+        <img src="/Company logo (1).png" class="h-10 object-contain" />
+        <img src="/Company logo (2).png" class="h-10 object-contain" />
+        <img src="/Company logo (3).png" class="h-10 object-contain" />
+        <img src="/Company logo (4).png" class="h-10 object-contain" />
+      </div>
+      <div class="grid grid-cols-4 gap-4 mt-4">
+        <img src="/Company logo (5).png" class="h-10 object-contain" />
+        <img src="/Company logo (6).png" class="h-10 object-contain" />
+        <img src="/Company logo (7).png" class="h-10 object-contain" />
+        <img src="/Company logo (8).png" class="h-10 object-contain" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Hero Image -->
+  <section class="flex justify-center px-4 sm:px-12 py-8">
+    <img src="/Container.png" alt="Big Hero" class=" rounded-lg w-full max-w-7xl object-cover">
+  </section>
+
+  <!-- Hero Section -->
+  <section class="text-center px-4 sm:px-12 py-8">
+    <h3 class="text-2xl sm:text-4xl font-medium">Elevating Card Programs with<br>Cutting-Edge Technology</h3>
+    <p class="text-gray-500 mt-2 mb-4 max-w-2xl mx-auto">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="#" class="text-[rgb(113,47,113)] font-medium hover:underline">Compare all Pro features <i class="fa-solid fa-arrow-right ml-1"></i></a>
+
+    <!-- Features -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 text-center ">
+      <div>
+        <i class="fa-solid fa-globe text-[rgb(113,47,113)] text-2xl"></i>
+        <h4 class="font-semibold mt-2">Globally Accepted</h4>
+        <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-key text-[rgb(113,47,113)] text-2xl"></i>
+        <h4 class="font-semibold mt-2">Biometric Integrated</h4>
+        <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-lock text-[rgb(113,47,113)] text-2xl"></i>
+        <h4 class="font-semibold mt-2">Fully Secured</h4>
+        <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
    
-</div>
-</div>
+   <h3 class="text-2xl sm:text-4xl mt-16 font-medium">Elevating Card Programs with<br> Cutting-Edge Technology</h3>
+    <p class="text-gray-500 mt-2 mb-4 max-w-2xl mx-auto">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="#" class="text-[rgb(113,47,113)] font-medium hover:underline">Compare all Pro features <i class="fa-solid fa-arrow-right ml-1"></i></a>
+
+  <!-- Responsive Feature Images -->
+   <div class="mt-6 flex flex-col lg:flex-row items-center justify-center gap-6">
+    <img src="/Image ( 592_490 ).png" alt="Feature 1" class="w-full max-w-lg lg:max-w-xl object-contain rounded-lg shadow">
+    <img src="/Image ( 592_490 ) (1).png" alt="Feature 2" class="w-full max-w-lg lg:max-w-xl object-contain rounded-lg shadow">
+   </div>
+
+  </section>
+
+  <!-- Stats Section -->
+  <section class=" py-8 px-4 sm:px-12 text-center grid grid-cols-2 sm:grid-cols-4 gap-6">
+    <div>
+      <h2 class="text-[rgb(113,47,113)] text-2xl font-bold">2 Million</h2>
+      <p>Customers</p>
+      <p style="color: grey;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae atque, ipsam animi eius, saepe suscipit ea beatae repellendus obcaecati expedita quidem! Vero minima unde dicta nulla iure error, quidem dolorem?</p>
+
+    </div>
+    <div>
+      <h2 class="text-[rgb(113,47,113)] text-2xl font-bold">1K</h2>
+      <p>Downloads</p>
+      <p style="color: grey;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis odio quis temporibus accusamus culpa ex, similique voluptate eum dolor neque tempore, sunt quo, architecto a error rem! Dolorum, nobis id!</p>
+    </div>
+    <div>
+      <h2 class="text-[rgb(113,47,113)] text-2xl font-bold">$73 Million</h2>
+      <p>Transactions</p>
+      <p style="color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi labore earum vel dolorem sit minima error neque sequi ad non! Ipsum a eum aspernatur molestiae repellendus ab quasi, neque at.</p>
+    </div>
+    <div>
+      <h2 class="text-[rgb(113,47,113)] text-2xl font-bold">2.0</h2>
+      <p>Latest Version</p>
+      <p style="color:grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur blanditiis nobis, quam rerum illum non sit repellat error, temporibus officiis! Sed soluta quidem repudiandae aut dignissimos obcaecati doloremque recusandae.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="text-center px-4 sm:px-12 py-12 ">
+    <img src="/Company logo (8).png" class="mx-auto h-10 mb-4">
+    <h3 class="text-lg sm:text-2xl font-medium mb-2">I had the pleasure of experiencing the next generation of card solutions with this incredible product.</h3>
+    <img src="/Base avatars.png" class="mx-auto h-10 mt-4">
+    <p class="text-sm text-gray-600 mt-2">Nick Babich, Lead Designer</p>
+    <div class="flex justify-center gap-1 text-yellow-400 mt-2">
+      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-12 px-4 sm:px-12">
+    <h3 class="text-2xl sm:text-4xl font-medium mb-4">Unlock Limitless Possibilities with <br>Our New Card Solution</h3>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mt-4">
+      <button class="bg-[rgb(113,47,113)] hover:bg-[rgb(130,60,130)] transition text-white px-4 py-2 rounded">Unlock your card <i class="fa-solid fa-credit-card"></i></button>
+      <button class="bg-gray-500 hover:bg-gray-600 transition text-white px-4 py-2 rounded">Custom Support <i class="fa-solid fa-headphones"></i></button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center px-4 sm:px-12 py-8 border-t">
+    <h2 class="text-xl font-semibold">Mode UI</h2>
+    <p class="text-gray-500 mt-2 mb-6 text-sm">Mode UI is a comprehensive design system that empowers designers and developers to create cohesive and visually stunning user interfaces.</p>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 text-left text-sm justify-items-center">
+      <div><p class="font-semibold mb-2">Company</p><a href="#">About Us</a><br><a href="#">Pricing</a><br><a href="#">Contact Us</a><br><a href="#">Features</a></div>
+      <div><p class="font-semibold mb-2">Product</p><a href="#">Figma design system</a><br><a href="#">iOS Kit</a><br><a href="#">Android Kit</a><br><a href="#">Wireframe</a></div>
+      <div><p class="font-semibold mb-2">Resources</p><a href="#">Templates</a><br><a href="#">Landing pages</a><br><a href="#">Documentation</a><br><a href="#">Comp library</a></div>
+      <div><p class="font-semibold mb-2">Legal</p><a href="#">Privacy Policy</a><br><a href="#">Terms</a><br><a href="#">Disclaimer</a><br><a href="#">Affiliate Program</a></div>
+      <div><p class="font-semibold mb-2">Support</p><a href="#">Help Center</a><br><a href="#">Raise Ticket</a><br><a href="#">Report</a><br><a href="#">Refund</a></div>
+    </div>
+    <div class="mt-6 text-gray-600 text-sm">© 2023 Mode UI INC. All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
 </body>
 </html>
