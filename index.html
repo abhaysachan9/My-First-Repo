@@ -193,18 +193,63 @@
   </section>
 
   <!-- Footer -->
-  <footer class="text-center px-4 sm:px-12 py-8 border-t">
-    <h2 class="text-xl font-semibold">Mode UI</h2>
-    <p class="text-gray-500 mt-2 mb-6 text-sm">Mode UI is a comprehensive design system that empowers designers and developers to create cohesive and visually stunning user interfaces.</p>
-    <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 text-left text-sm justify-items-center">
-      <div><p class="font-semibold mb-2">Company</p><a href="#">About Us</a><br><a href="#">Pricing</a><br><a href="#">Contact Us</a><br><a href="#">Features</a></div>
-      <div><p class="font-semibold mb-2">Product</p><a href="#">Figma design system</a><br><a href="#">iOS Kit</a><br><a href="#">Android Kit</a><br><a href="#">Wireframe</a></div>
-      <div><p class="font-semibold mb-2">Resources</p><a href="#">Templates</a><br><a href="#">Landing pages</a><br><a href="#">Documentation</a><br><a href="#">Comp library</a></div>
-      <div><p class="font-semibold mb-2">Legal</p><a href="#">Privacy Policy</a><br><a href="#">Terms</a><br><a href="#">Disclaimer</a><br><a href="#">Affiliate Program</a></div>
-      <div><p class="font-semibold mb-2">Support</p><a href="#">Help Center</a><br><a href="#">Raise Ticket</a><br><a href="#">Report</a><br><a href="#">Refund</a></div>
+ <footer class="text-center px-4 sm:px-12 py-8 border-t">
+  <h2 class="text-xl font-semibold">Mode UI</h2>
+  <p class="text-gray-500 mt-2 mb-6 text-sm">
+    Mode UI is a comprehensive design system that empowers designers and developers to create cohesive and visually stunning user interfaces.
+  </p>
+
+  <!-- Mobile: Vertical layout, Desktop: Grid layout -->
+  <div class="flex flex-col gap-6 sm:grid sm:grid-cols-5 sm:gap-4 text-left text-sm justify-items-center">
+    <div>
+      <p class="font-semibold mb-2">Company</p>
+      <a href="#">About Us</a><br>
+      <a href="#">Pricing</a><br>
+      <a href="#">Contact Us</a><br>
+      <a href="#">Features</a>
     </div>
-    <div class="mt-6 text-gray-600 text-sm">© 2023 Mode UI INC. All Rights Reserved.</div>
-  </footer>
+    <div>
+      <p class="font-semibold mb-2">Product</p>
+      <a href="#">Figma design system</a><br>
+      <a href="#">iOS Kit</a><br>
+      <a href="#">Android Kit</a><br>
+      <a href="#">Wireframe</a>
+    </div>
+    <div>
+      <p class="font-semibold mb-2">Resources</p>
+      <a href="#">Templates</a><br>
+      <a href="#">Landing pages</a><br>
+      <a href="#">Documentation</a><br>
+      <a href="#">Comp library</a>
+    </div>
+    <div>
+      <p class="font-semibold mb-2">Legal</p>
+      <a href="#">Privacy Policy</a><br>
+      <a href="#">Terms & Conditions</a><br>
+      <a href="#">Disclaimer</a><br>
+      <a href="#">Affiliate Program</a>
+    </div>
+    <div>
+      <p class="font-semibold mb-2">Support</p>
+      <a href="#">Help Center</a><br>
+      <a href="#">Raise Ticket</a><br>
+      <a href="#">Report</a><br>
+      <a href="#">Refund</a>
+    </div>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="flex justify-center gap-4 mt-6 text-gray-600 text-lg">
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="#"><i class="fa-brands fa-discord"></i></a>
+  </div>
+
+  <div class="mt-6 text-gray-600 text-sm">
+    © 2023 Mode UI INC. All Rights Reserved.
+  </div>
+</footer>
+
 
   <script>
     document.getElementById('menu-toggle').addEventListener('click', () => {
